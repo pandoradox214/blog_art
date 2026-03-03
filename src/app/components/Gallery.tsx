@@ -13,19 +13,19 @@ const artworks: Artwork[] = [
     id: 1,
     title: "Sonnetto",
     year: "2024",
-    imageUrl: "../../public/images/sonetto.jpg",
+    imageUrl: "images/sonetto.jpg",
   },
   {
     id: 2,
     title: "Miyu the cute rabbit",
     year: "2024",
-    imageUrl: "../../public/images/miyu.jpg",
+    imageUrl: "images/miyu.jpg",
   },
   {
     id: 3,
     title: "Maomao",
     year: "2024",
-    imageUrl: "../../public/images/maomao.jpg",
+    imageUrl: "images/maomao.jpg",
   },
   // {
   //   id: 4,
