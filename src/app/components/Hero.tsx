@@ -11,8 +11,7 @@ export function Hero() {
           Welcome to My Portfolio
         </h1>
         <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto">
-          Exploring creativity through visual arts. Browse my collection of
-          paintings, digital art, and mixed media works.
+          This will be the highlight of my portfolio website, showcasing my best works and artistic journey. Explore my gallery to see a curated selection of my recent creations, each piece reflecting my passion and growth as an artist.
         </p>
         <a
           href="#gallery"

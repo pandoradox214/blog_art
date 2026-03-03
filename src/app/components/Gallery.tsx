@@ -4,7 +4,6 @@ import { X } from "lucide-react";
 interface Artwork {
   id: number;
   title: string;
-  medium: string;
   year: string;
   imageUrl: string;
 }
@@ -12,67 +11,64 @@ interface Artwork {
 const artworks: Artwork[] = [
   {
     id: 1,
-    title: "Abstract Expressions",
-    medium: "Acrylic on Canvas",
-    year: "2026",
-    imageUrl: "https://images.unsplash.com/photo-1748285279107-13e8799eab76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHBhaW50aW5nJTIwYXJ0d29ya3xlbnwxfHx8fDE3NzI0NjUzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    title: "Sonnetto",
+    year: "2024",
+    imageUrl: "../../public/images/sonetto.jpg",
   },
   {
     id: 2,
-    title: "Digital Dreams",
-    medium: "Digital Art",
-    year: "2025",
-    imageUrl: "https://images.unsplash.com/photo-1767473408016-6c7c9f3d0473?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkaWdpdGFsJTIwYXJ0fGVufDF8fHx8MTc3MjUzNTcyMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    title: "Miyu the cute rabbit",
+    year: "2024",
+    imageUrl: "../../public/images/miyu.jpg",
   },
   {
     id: 3,
-    title: "Watercolor Wonderland",
-    medium: "Watercolor",
-    year: "2025",
-    imageUrl: "https://images.unsplash.com/photo-1705599773422-c1066356f801?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXRlcmNvbG9yJTIwcGFpbnRpbmd8ZW58MXx8fHwxNzcyNDM1OTEwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-  },
-  {
-    id: 4,
-    title: "Sculptural Forms",
-    medium: "Mixed Media",
+    title: "Maomao",
     year: "2024",
-    imageUrl: "https://images.unsplash.com/photo-1767478253343-0253c6367041?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb250ZW1wb3JhcnklMjBzY3VscHR1cmV8ZW58MXx8fHwxNzcyNTQ5MjEzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    imageUrl: "../../public/images/maomao.jpg",
   },
-  {
-    id: 5,
-    title: "Minimalist Harmony",
-    medium: "Acrylic on Canvas",
-    year: "2024",
-    imageUrl: "https://images.unsplash.com/photo-1761156254622-7b66649b1f69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwYXJ0JTIwZGVzaWdufGVufDF8fHx8MTc3MjQ2NTM1N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-  },
-  {
-    id: 6,
-    title: "Vibrant Energy",
-    medium: "Oil on Canvas",
-    year: "2024",
-    imageUrl: "https://images.unsplash.com/photo-1618913001611-2054733f4aa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMGFydHdvcmslMjBjYW52YXN8ZW58MXx8fHwxNzcyNTQ5MjE0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-  },
-  {
-    id: 7,
-    title: "Portrait Study",
-    medium: "Photography",
-    year: "2023",
-    imageUrl: "https://images.unsplash.com/photo-1665076034878-1bf3eb03a853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5lJTIwYXJ0JTIwcGhvdG9ncmFwaHklMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzI1MzM3ODh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-  },
-  {
-    id: 8,
-    title: "Landscape Vista",
-    medium: "Oil on Canvas",
-    year: "2023",
-    imageUrl: "https://images.unsplash.com/photo-1694636941182-9e9fd8b3edb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvaWwlMjBwYWludGluZyUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3NzI0ODkxMDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-  },
-  {
-    id: 9,
-    title: "Collage Composition",
-    medium: "Mixed Media",
-    year: "2023",
-    imageUrl: "https://images.unsplash.com/photo-1697559009030-9c80ed149478?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaXhlZCUyMG1lZGlhJTIwY29sbGFnZXxlbnwxfHx8fDE3NzI0ODIxODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-  },
+  // {
+  //   id: 4,
+  //   title: "Sculptural Forms",
+  //   medium: "Mixed Media",
+  //   year: "2024",
+  //   imageUrl: "https://images.unsplash.com/photo-1767478253343-0253c6367041?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb250ZW1wb3JhcnklMjBzY3VscHR1cmV8ZW58MXx8fHwxNzcyNTQ5MjEzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Minimalist Harmony",
+  //   medium: "Acrylic on Canvas",
+  //   year: "2024",
+  //   imageUrl: "https://images.unsplash.com/photo-1761156254622-7b66649b1f69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwYXJ0JTIwZGVzaWdufGVufDF8fHx8MTc3MjQ2NTM1N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Vibrant Energy",
+  //   medium: "Oil on Canvas",
+  //   year: "2024",
+  //   imageUrl: "https://images.unsplash.com/photo-1618913001611-2054733f4aa8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMGFydHdvcmslMjBjYW52YXN8ZW58MXx8fHwxNzcyNTQ5MjE0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  // },
+  // {
+  //   id: 7,
+  //   title: "Portrait Study",
+  //   medium: "Photography",
+  //   year: "2023",
+  //   imageUrl: "https://images.unsplash.com/photo-1665076034878-1bf3eb03a853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaW5lJTIwYXJ0JTIwcGhvdG9ncmFwaHklMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzI1MzM3ODh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Landscape Vista",
+  //   medium: "Oil on Canvas",
+  //   year: "2023",
+  //   imageUrl: "https://images.unsplash.com/photo-1694636941182-9e9fd8b3edb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvaWwlMjBwYWludGluZyUyMGxhbmRzY2FwZXxlbnwxfHx8fDE3NzI0ODkxMDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  // },
+  // {
+  //   id: 9,
+  //   title: "Collage Composition",
+  //   medium: "Mixed Media",
+  //   year: "2023",
+  //   imageUrl: "https://images.unsplash.com/photo-1697559009030-9c80ed149478?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaXhlZCUyMG1lZGlhJTIwY29sbGFnZXxlbnwxfHx8fDE3NzI0ODIxODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  // },
 ];
 
 export function Gallery() {
