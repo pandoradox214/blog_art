@@ -11,7 +11,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-   base: '/blog_art',
+   base: '/blog_art/',
   resolve: {
     alias: {
       // Alias @ to the src directory
